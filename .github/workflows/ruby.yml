@@ -51,6 +51,6 @@ jobs:
           DATABASE_URL: postgresql://postgres:postgres@localhost:5432/techlog_test
         run: |
           bundle exec rspec
-          
+
       - name: Run rubocop
         run: bundle exec rubocop
