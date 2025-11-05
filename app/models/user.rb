@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :rememberable,
          :validatable
 
-  validates :nickname, length: { maximum: 20 } # 追加
+  validates :nickname, length: { maximum: 20 }, presence: true
 end
