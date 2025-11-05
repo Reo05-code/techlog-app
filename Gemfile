@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.3'
-
+gem 'devise' # 追記
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.10'
 
@@ -68,12 +68,12 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'pg', '~> 1.5'
   gem 'rubocop', require: false # 追加
   gem 'rubocop-performance', require: false # 追加
   gem 'rubocop-rails', require: false # 追加
   gem 'rubocop-rspec' # 追加
   gem 'spring-commands-rspec'
-  gem 'pg', '~> 1.5'
 end
 
 group :test do
