@@ -73,6 +73,7 @@ group :development do
   gem 'rubocop-rails', require: false # 追加
   gem 'rubocop-rspec' # 追加
   gem 'spring-commands-rspec'
+  gem 'pg', '~> 1.5'
 end
 
 group :test do
